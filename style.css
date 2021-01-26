@@ -13,7 +13,6 @@ body {
 }
 
 .navbar {
-    
     background-color: rgb(5, 26, 39);
 }
 
@@ -190,13 +189,16 @@ h5 {
 
 .banner h2{
     color: rgb(226,226,226);
-    position: absolute;
-    float: right;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 20px;
 }
 
 .banner .container {
     float: right;
-    padding: 100px;
+    padding: 20px;
 }
 
 .banner h3 {
