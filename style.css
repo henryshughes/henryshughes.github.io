@@ -13,7 +13,8 @@ body {
 }
 
 .navbar {
-    background-color: #333;
+    
+    background-color: rgb(5, 26, 39);
 }
 
 .container {
@@ -34,8 +35,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-
-    background-color: #333;
 }
 
 .logo {
@@ -102,17 +101,107 @@ nav {
     letter-spacing: 3px;
 }
 
-.footer .navigation a:hover {
-    border-bottom: 2px #fff solid;
+.footer i{
+    padding-left: 5px;
 }
 
-.footer h2{
+.footer .navigation a:hover {
+    border-bottom: 2px #fff solid;
+    cursor: pointer;
+}
+
+h4 {
     color: rgb(226,226,226);
     font-size: 20px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
+h5 {
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.languages {
+    background: linear-gradient(to right,rgba(202, 201, 201, 0.856), #f4f4f4);
+    /*background-color:#f4f4f4;*/
+}
+
+.languages .card {
+    background-color: #ffffff;
+    text-align: center;
+    width: 110px;
+    height: auto;
+}
+
+.languages .card:hover {
+    transition: transform 0.35s;
+    transform: translateY(-15px);
+}
+
+.languages .card img{
+    border-radius: 2px;
+}
+
+.languages h4 {
+    color: #333;
+    text-align: center;
+}
+
+.languages .card img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.languages p {
+   font-weight: bold;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(Images/bridge9.webp);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;          /* Firefox */
+    image-rendering: -o-crisp-edges;            /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+}
+
+.banner button {
+    display: inline-block;
+    position: relative;
+}
+
+.banner h2{
+    color: rgb(226,226,226);
+    position: absolute;
+    float: right;
+}
+
+.banner .container {
+    float: right;
+    padding: 100px;
+}
+
+.banner h3 {
+    color: rgb(226,226,226);
+}
 
 
 @media screen and (max-width:1024px) {
@@ -130,14 +219,16 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #333;
+        background-color: rgb(5, 26, 39);
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 1;
     }
+
 
     .nav-links li {
         opacity: 0;
@@ -146,7 +237,9 @@ nav {
     .burger {
         display: block;
     }
+
 }
+
 
 .nav-active {
     transform: translateX(0%);
