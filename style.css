@@ -13,7 +13,9 @@ body {
 }
 
 .navbar {
-    background-color: rgb(5, 26, 39);
+    /* background: linear-gradient(to right, rgb(5, 26, 39), rgb(17, 35,52));*/
+    background-color: rgb(2, 25, 38);
+
 }
 
 .container {
@@ -81,7 +83,7 @@ nav {
 }
 
 .footer {
-    background-color: #333;
+    background-color: rgb(5, 26, 39);
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -112,6 +114,7 @@ nav {
 h4 {
     color: rgb(226,226,226);
     font-size: 20px;
+    font-weight: lighter;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -123,8 +126,12 @@ h5 {
 }
 
 .languages {
-    background: linear-gradient(to right,rgba(202, 201, 201, 0.856), #f4f4f4);
+    background-color: white;
     /*background-color:#f4f4f4;*/
+}
+
+.languages .flex {
+    flex-wrap: wrap;
 }
 
 .languages .card {
@@ -132,10 +139,10 @@ h5 {
     text-align: center;
     width: 110px;
     height: auto;
+    transition: transform 0.2s ease-in;
 }
 
 .languages .card:hover {
-    transition: transform 0.35s;
     transform: translateY(-15px);
 }
 
@@ -179,7 +186,7 @@ h5 {
     image-rendering: -moz-crisp-edges;          /* Firefox */
     image-rendering: -o-crisp-edges;            /* Opera */
     image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
-    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */ 
 }
 
 .banner button {
@@ -193,11 +200,10 @@ h5 {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .banner .container {
-    float: right;
     padding: 20px;
 }
 
@@ -205,6 +211,44 @@ h5 {
     color: rgb(226,226,226);
 }
 
+.cloud {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.cloud .grid {
+    grid-template-columns: 5fr 2fr;
+}
+
+.cloud img {
+    border-radius: 100px;
+}
+
+
+.about {
+    background: linear-gradient(rgba(197, 193, 193, 0.925), white);
+    margin-bottom: 40px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content img{
+    height: 250px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.content p{
+    font-size: 17px;
+    letter-spacing: normal;
+}
 
 @media screen and (max-width:1024px) {
     .nav-links {
@@ -219,7 +263,7 @@ h5 {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 70vh;
         top: 8vh;
         background-color: rgb(5, 26, 39);
         display: flex;
@@ -229,6 +273,37 @@ h5 {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 1;
+    }
+
+    .about img{
+        display: none;
+    }
+
+    .about h3{
+        text-align: center;
+    }
+
+    .about p{
+        text-align: center;
+    }
+
+    .footer .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        display: block;
+        text-align: center;
+    }
+
+    .footer .grid h4 {
+        padding: 2rem 0;
+    }
+
+    .footer .grid li{
+         padding: 0.6rem 0;
+    }
+
+    .footer .grid i{
+        padding: 2rem 5px ;
     }
 
 
