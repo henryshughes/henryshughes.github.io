@@ -78,9 +78,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-.grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
 
 .footer {
     background-color: rgb(5, 26, 39);
@@ -226,8 +223,8 @@ h5 {
 
 
 .about {
-    background: linear-gradient(rgba(197, 193, 193, 0.925), white);
-    margin-bottom: 40px;
+    /*background: linear-gradient(rgba(197, 193, 193, 0.925), white);*/
+    background: linear-gradient( rgba(180, 179, 179, 0.925), #f4f4f4);
 }
 
 
@@ -249,6 +246,37 @@ h5 {
     font-size: 17px;
     letter-spacing: normal;
 }
+
+
+
+.hobbies .content .hobbiesbox{
+    background-color: #f4f4f4;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hobbies .grid > *:first-child{
+    grid-column: 1 / span 2;
+}
+
+.hobbies .grid > *:nth-child(4){
+    grid-column: 1 / span 2;
+}
+
+.hobbiesbox {
+    border-radius: 10px;
+}
+
+.hobbies {
+    /*background: linear-gradient(rgba(197, 193, 193, 0.925), #f4f4f4);*/
+    background: linear-gradient(#f4f4f4,white);
+}
+
+.hobbies .content {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 
 @media screen and (max-width:1024px) {
     .nav-links {
