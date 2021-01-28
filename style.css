@@ -322,11 +322,6 @@ h5 {
     margin-left: 40px;
 }
 
-.test {
-    margin: 0px;
-    height: 5px;
-    background-color: black;
-}
 
 @media screen and (max-width:1024px) {
     .nav-links {
@@ -411,6 +406,38 @@ h5 {
 
     .burger {
         display: block;
+    }
+
+    .wsp img {
+        display: none;
+        background-color: pink;
+    }
+
+    .wsp .grid-5 > *:nth-child(1){
+        grid-column: 1 / span 5;
+    }
+
+    .mof img {
+        display: none;
+        background-color: pink;
+    }
+
+    .mof .grid-5 > *:nth-child(1){
+        grid-column: 1 / span 5;
+    }
+
+    .ken .aphoto {
+        display: none;
+    }
+
+    .ken p {
+        padding: 0;
+    }
+
+    .work .grid-5 {
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat((5, 1fr));
     }
 
 }
