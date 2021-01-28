@@ -3,12 +3,8 @@ const navSlide = () => {
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
 
-
-
-
     burger.addEventListener('click', () => {
-        // Toggle nav
-        
+        // Toggle nav      
         nav.classList.toggle('nav-active');
 
         // Animate links
@@ -27,3 +23,4 @@ const navSlide = () => {
 
 }
 // Later maybe call this as a separate function?
+navSlide();

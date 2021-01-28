@@ -224,7 +224,12 @@ h5 {
 
 .about {
     /*background: linear-gradient(rgba(197, 193, 193, 0.925), white);*/
-    background: linear-gradient( rgba(180, 179, 179, 0.925), #f4f4f4);
+    background: linear-gradient( rgba(180, 179, 179, 0.925), white);
+}
+
+
+.about .grid-3 > *:first-child{
+    grid-column: 1 / span 2;
 }
 
 .content .grid i{
@@ -246,7 +251,7 @@ h5 {
     height: 250px;
     width: 250px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 10px;
 }
 
@@ -274,7 +279,8 @@ h5 {
 
 .hobbies {
     /*background: linear-gradient(rgba(197, 193, 193, 0.925), #f4f4f4);*/
-    background: linear-gradient(#f4f4f4,white);
+    /*background: linear-gradient(#f4f4f4,white);*/
+    background-color: white;
 }
 
 .hobbies .content {
@@ -283,6 +289,13 @@ h5 {
     flex-direction: row;
 }
 
+.work .grid-5 > *:first-child {
+    grid-column: 1 / span 4;
+}
+
+.wsp {
+    background-color: white;
+}
 
 @media screen and (max-width:1024px) {
     .nav-links {
@@ -293,9 +306,10 @@ h5 {
         display: none;
     }
 
-    .about .grid > *:first-child{
-        grid-column: 1 / span 2;
+    .about .grid-3 > *:nth-child(1){
+        grid-column: 1 / span 3;
     }
+
 
     .about h3{
         text-align: center;
@@ -311,7 +325,7 @@ h5 {
         overflow-x: hidden;
     }
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 70vh;
         top: 8vh;
@@ -339,8 +353,6 @@ h5 {
     .hobbies .grid > *:nth-child(4){
         grid-column: 1 / span 2;
     }
-
-
 
     .footer .vertical {
         grid-template-columns: 1fr;
