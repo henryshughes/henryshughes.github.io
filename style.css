@@ -186,6 +186,7 @@ h5 {
     -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */ 
 }
 
+
 .banner button {
     display: inline-block;
     position: relative;
@@ -260,6 +261,8 @@ h5 {
     letter-spacing: normal;
 }
 
+
+
 .hobbies .content .hobbiesbox{
     background-color: #f4f4f4;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
@@ -289,6 +292,11 @@ h5 {
     flex-direction: row;
 }
 
+.work p {
+    font-size: 17px;
+    letter-spacing: normal;
+}
+
 .work .grid-5 > *:first-child {
     grid-column: 1 / span 4;
 }
@@ -306,6 +314,10 @@ h5 {
     margin-right: auto;
 }
 
+.aphoto h2 {
+    font-size: 19px;
+}
+
 .wsp img {
     width: 200px;
     height: 200px;
@@ -321,6 +333,65 @@ h5 {
     box-shadow: #333;
     margin-left: 40px;
 }
+
+.contact .info p {
+    font-size: 17px;
+    letter-spacing: normal;
+    font-weight:  bolder;
+    color: rgb(226,226,226);
+}
+
+.contact h2 {
+    color: rgb(226,226,226);
+}
+
+.contact p {
+    font-size: 17px;
+    color: rgb(226,226,226);
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info a {
+    align-items: center;
+    font-size: 17px;
+    letter-spacing: normal;
+    display: block;
+    color: rgb(226,226,226);
+    font-weight: bolder;  
+}
+
+.form {
+    display: none;
+}
+
+.contact .grid > *:nth-child(1){
+    grid-column: 1 / span 2;
+}
+
+.contact i{
+    color: rgb(226,226,226);
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    background: url(Images/bridge10.jpg);
+    background-size: cover;
+    background-position: right;
+    justify-content: space-between;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;          /* Firefox */
+    image-rendering: -o-crisp-edges;            /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */ 
+}
+
 
 
 @media screen and (max-width:1024px) {
@@ -350,6 +421,15 @@ h5 {
     body {
         overflow-x: hidden;
     }
+
+    .contact .grid > *:nth-child(1){
+        grid-column: 1 / span 2;
+    }
+
+    .contact .grid > *:nth-child(2){
+        grid-column: 1 / span 2;
+    }
+
     .nav-links {
         position: fixed;
         right: 0px;
