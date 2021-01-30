@@ -567,4 +567,7 @@ function reset() {
     document.getElementById("turn").innerHTML = "";
     over = false;
     activated = false;
+    edge = false;
+
+    computer_turn();
 }
