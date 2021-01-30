@@ -13,8 +13,9 @@ body {
 }
 
 .navbar {
-    /* background: linear-gradient(to right, rgb(5, 26, 39), rgb(17, 35,52));*/
-    background-color: rgb(2, 25, 38);
+    /* background: linear-gradient(to right, rgb(5, 26, 39), rgb(17, 35,52));
+    background-color: rgb(2, 25, 38);*/
+    background-color: rgb(9, 12, 29);
 
 }
 
@@ -80,7 +81,7 @@ nav {
 
 
 .footer {
-    background-color: rgb(5, 26, 39);
+    background-color: rgb(9, 12, 29);
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -173,8 +174,8 @@ h5 {
 
 .banner {
     position: relative;
-    min-height: 100vh;
-    background: url(Images/bridge9.webp);
+    min-height: 65vh;
+    background: url(Images/StockSnap_ANH6T66XAM.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -366,7 +367,7 @@ h5 {
     font-weight: bolder;  
 }
 
-.form {
+.showcase-form {
     display: none;
 }
 
@@ -380,8 +381,8 @@ h5 {
 
 .contact {
     position: relative;
-    min-height: 100vh;
-    background: url(Images/bridge10.jpg);
+    min-height: 90vh;
+    background: url(Images/tim-umphreys-v9xjEjGKgao-unsplash.jpg);
     background-size: cover;
     background-position: right;
     justify-content: space-between;
@@ -391,6 +392,101 @@ h5 {
     image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
     -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */ 
 }
+
+
+/* Game 2 */
+.test {
+    margin: 0px;
+    height: 5px;
+    background-color: #333;
+}
+
+.game-2 .play-area {
+    animation: slideInFromRight 1s ease-in;
+}
+.game-2 h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+
+button{
+    border: 1px solid black;
+    height: 75px;
+    width: 75px;
+}
+
+.block {
+    width: (350/3)px;
+    height: (350/3)px;
+}
+
+.play-area {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;
+}
+
+.block:hover {
+    background-color:grey ;
+
+}
+
+.game-2 .play-area{
+    padding: 0;
+}
+
+.game-2 button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    border: 3px solid black;
+    vertical-align: middle;
+    width: 200px;
+    height: auto;
+}
+
+.game-2 button:hover { 
+    transform: scale(0.95);
+    border: 5px solid red;
+}
+
+.block {
+    background-color: white;
+    border: 3px solid black;
+}
+
+#block-1,
+#block-2,
+#block-3 {
+  border-top: none;
+}
+
+#block-1,
+#block-4,
+#block-7 {
+  border-left: none;
+}
+
+#block-7,
+#block-8,
+#block-9 {
+  border-bottom: none;
+}
+
+#block-3,
+#block-6,
+#block-9 {
+  border-right: none;
+}
+
+
+
 
 
 
