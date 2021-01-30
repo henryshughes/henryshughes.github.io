@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
+    <script src="tictactoe.js"></script>
 
     <title>Henry Hughes | UW Engineering</title>
 </head>
@@ -44,13 +45,13 @@
         </nav>
     </div>
 
-    <section class="game-2 bg-primary">
-        <h1 class="text-center underline md">Tic Tac Toe</h1>
+    <section class="game-2">
+        <h1 class="text-center md">Tic Tac Toe</h1>
         <p class="text-center smmd">The computer will go first, try and beat it!</p>
-        <div class="container reset p-3">
-            <button class="btn-light container md text-center" onclick= "computer_turn()" id="reset-2">Play!</button>
+        <div class="container reset p-1">
+            <button class="container md text-center" onclick= "computer_turn()" id="reset-2">Play!</button>
         </div>
-        <h2 class="text-center" id="turn"></h2>
+        <h2 class="text-center py-1" id="turn"></h2>
         <div class="container play-area bg-light">
             <div onclick="block1()" id = "block-1" class="block xl text-center"></div>
             <div onclick="block2()" id = "block-2" class="block xl text-center"></div>
@@ -62,9 +63,9 @@
             <div onclick="block8()" id = "block-8" class="block xl text-center"></div>
             <div onclick="block9()" id = "block-9" class="block xl text-center"></div>
         </div>
-        <h2 class="text-center" id="display-result"> </h2>
+        <h2 class="text-center py-2" id="display-result"> </h2>
         <div class="container reset p-3">
-            <button class="btn-light container md text-center" onclick= "reset()" id="reset-2">Reset</button>
+            <button class="container md text-center" onclick= "reset()" id="reset-2">Restart</button>
         </div>
     </section>
 
