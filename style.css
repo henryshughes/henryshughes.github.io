@@ -367,12 +367,76 @@ h5 {
     font-weight: bolder;  
 }
 
-.showcase-form {
+/*.showcase-form {
     display: none;
 }
 
 .contact .grid > *:nth-child(1){
     grid-column: 1 / span 2;
+}*/
+
+.showcase-form {
+    border-radius: 5px;
+}
+
+.contact label {
+    margin-right: 10px;
+    display: none;
+}
+
+.contact .grid {
+    align-items: self-start;
+}
+
+.contact input[type = text], input[type = email], textarea {
+    border: 2px solid black;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 300px;  
+}
+
+.contact input, textarea {
+    color: black;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact input {
+    font-weight: 500;
+}
+
+
+.contact textarea {
+    resize: none;
+}
+
+.contact button {
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+    border-color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 175px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;   
+    vertical-align: center;
+}
+
+.contact .showcase-form h2 {
+    color: white;
+}
+
+.contact button:hover {
+    background-color:#b3afaf;
+    opacity: 100%;
+    cursor: pointer;
+
 }
 
 .contact i{
@@ -394,6 +458,15 @@ h5 {
 }
 
 
+.timesharewebapp p {
+    font-size: 17px;
+}
+
+.timesharewebapp a {
+    font-size: 17px;
+    color: black;
+}
+
 /* Game 2 */
 .test {
     margin: 0px;
@@ -407,6 +480,11 @@ h5 {
 .game-2 h1 {
     margin: 0;
     padding: 10px;
+}
+
+.game-2 p {
+    font-size: 17px;
+    padding-bottom: 20px;
 }
 
 
@@ -484,11 +562,6 @@ button{
 #block-9 {
   border-right: none;
 }
-
-
-
-
-
 
 @media screen and (max-width:1024px) {
     .nav-links {
