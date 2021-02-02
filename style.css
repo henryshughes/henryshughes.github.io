@@ -689,6 +689,10 @@ button{
         grid-template-columns: repeat((5, 1fr));
     }
 
+    .contact .info {
+        display: none;
+    }
+
 }
 
 
