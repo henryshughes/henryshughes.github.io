@@ -9,13 +9,13 @@ body {
 }
 
 .navbar a:hover{
-    border-bottom: 2px #fff solid;
+    border-bottom: 2px #ffffff solid;
 }
 
 .navbar {
     /* background: linear-gradient(to right, rgb(5, 26, 39), rgb(17, 35,52));
     background-color: rgb(2, 25, 38);*/
-    background-color: rgb(9, 12, 29);
+    background-color: rgb(0,0,0);
 
 }
 
@@ -59,7 +59,7 @@ nav {
 }
 
 .nav-links a{
-    color: rgb(226,226,226);
+    color: rgb(255,255,255);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -81,7 +81,7 @@ nav {
 
 
 .footer {
-    background-color: rgb(9, 12, 29);
+    background-color: rgb(0,0,0);
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -110,9 +110,9 @@ nav {
 }
 
 h4 {
-    color: rgb(226,226,226);
+    color: rgb(255,255,255);
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -121,6 +121,14 @@ h5 {
     color: #333;
     font-size: 20px;
     letter-spacing: 5px;
+}
+
+h6 {
+    color: rgb(255,255,255);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .languages {
@@ -175,7 +183,7 @@ h5 {
 .banner {
     position: relative;
     min-height: 65vh;
-    background: url(Images/StockSnap_ANH6T66XAM.jpg);
+    background: url(Images/water-bg-1.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -194,12 +202,12 @@ h5 {
 }
 
 .banner h2{
-    color: rgb(226,226,226);
+    color: rgb(0,0,0);
     margin-top: 0px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-weight: lighter;
-    font-size: 17px;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .banner .container {
@@ -226,7 +234,7 @@ h5 {
 
 .about {
     /*background: linear-gradient(rgba(197, 193, 193, 0.925), white);*/
-    background: linear-gradient( rgba(180, 179, 179, 0.925), white);
+    background: linear-gradient(white);
 }
 
 
@@ -446,7 +454,7 @@ h5 {
 .contact {
     position: relative;
     min-height: 90vh;
-    background: url(Images/tim-umphreys-v9xjEjGKgao-unsplash.jpg);
+    background: url(Images/contact\ image.jpeg);
     background-size: cover;
     background-position: right;
     justify-content: space-between;

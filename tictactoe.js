@@ -361,6 +361,11 @@ function computer_turn() {
         board.block3 = "X";
     }
 
+    else if (((document.getElementById("block-3").innerHTML).length == 1) && (turn_list.length == 2) && ((document.getElementById("block-8").innerHTML).length == 1)) {
+        document.getElementById("block-1").innerHTML = "X";
+        board.block1 = "X";
+    }
+
     else if (((document.getElementById("block-9").innerHTML).length == 0) && (turn_list.length <= 1)) {
         document.getElementById("block-9").innerHTML = "X";
         board.block9 = "X";
