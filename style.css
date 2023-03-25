@@ -319,6 +319,11 @@ h6 {
     margin-right: auto;
 }
 
+.graph {
+    max-width: 100%;
+    height:auto;
+}
+
 .aphoto h2 {
     font-size: 19px;
 }
@@ -468,9 +473,19 @@ h6 {
     line-height: 1.75em;
 }
 
+.work p{
+    line-height: 1.75em;
+}
+
 .timesharewebapp a {
     font-size: 17px;
     color: black;
+}
+
+.project_links a{
+    color: black;
+    font-size: large;
+    
 }
 
 /* Game 2 */

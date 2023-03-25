@@ -44,10 +44,24 @@
             </div>
         </nav>
     </div>
+    <section class="project_links py-3">
+        <div class="container">
+            <h2 class="smmd py-1" id="nba_wingspan_analysis">
+                Feel free to check out some of my projects below!
+            </h2>
+        
+            <a href="#nba_wingspan_analysis">Wingspan or Height? Looking at What Measurables Matter in the NBA</a></br> </br> 
+        
+            <a href="#timesharewebapp">A Unique Webapp That Allows People to Rent their Cottages</a></br> </br> 
+  
+            <a href="#finite element analysis">A Finite Element Analyisis Model That Solves Structural Engineering Problems</a></br> </br> 
 
+            <a href="#tictactoe">Test Your Tic Tac Toe Skills Against a Computer That Plays Optimally</a>
+        </div>
+     </section>
     <section class="timesharewebapp py-3">
         <div class="container">
-            <h2 class="smmd py-1">
+            <h2 class="smmd py-1" id="nba_wingspan_analysis">
                 Wingspan or Height? Looking at What Measurables Matter in the NBA
             </h2>
             <p>
@@ -58,15 +72,28 @@
 
                 1. Kawhi Leonard</br>  2. Rudy Gobert</br>  3. Giannis Antetokounmpo</br>  4. Draymond Green</br> </br>  
                 A lot of highly effective offensive players also have long wingspans. Kevin Durant has a 7'6" wingspan, giving him the ability to easily shoot over smaller
-                defenders.  </br> </br>  
+                defenders. However, the majority of the advantages of having a long wingspan come on the defensive end. </br> </br>  
 
+                Most people have wingspans that are approximately equal to the height. I was curious to see whether this held true in the NBA. I initially assumed that it wouldn't, 
+                as it would make sense that players with longer wingspans relative to their heights would be more effective players, and then be able to make the NBA. </br> </br> 
+
+                To test this out, I scraped the height and wingspan data of all the current NBA players off the internet using 
+                <a href="https://www.selenium.dev/documentation/" target="_blank">Selenium</a>
+                and 
+                <a href="https://beautiful-soup-4.readthedocs.io/en/latest/" target="_blank">Beautiful Soup</a>.
+                I then plotted all the data points using Matplotlib, along with a 1 : 1 line. I then plotted a line that is 1 : 1 + 5", which is actually a much closer representation
+                of the NBA data. This indicates that having a longer wingspan than height is very valuable in basketball. The graph can be seen below, and the source code can be found
+                <a href="https://github.com/henryshughes/nba_wingspan_analysis" target="_blank">here.</a>
+             </br></br>
             </p>
+            <img class = "graph" src="Images/Wingspan vs Height.png">
+
         </div>
      </section>
 
     <section class="timesharewebapp py-3">
         <div class="container">
-            <h2 class="smmd py-1">
+            <h2 id="timesharewebapp" class="smmd py-1">
                 Timesharewebapp:
             </h2>
             <p>
@@ -75,15 +102,51 @@
                 did not have to worry about their cottage being rented by people who they didn't pre-approve.   </br> </br>
                 The app was created with Meteor.JS, MongoDB, Stripe, Bootstrap, HTML, CSS, and Javascript.  </br> </br>
                 Please view the source code at the following link: 
-                <a href="https://github.com/DepressedDragon/TimeshareWebapp">Source Code</a>
+                <a href="https://github.com/DepressedDragon/TimeshareWebapp" target="_blank">Source Code</a>
             </p>
         </div>
      </section>
 
+     <section class="timesharewebapp py-3">
+        <div class="container">
+            <h2 class="smmd py-1" id="finite element analysis">
+                Finite Element Analysis Problem Solver
+            </h2>
+            <p>
+                Finite Element Analysis (FEA) is a numerical simulation method that is widely used in engineering and 
+                science to analyze complex physical systems. The method is based on the discretization of the system 
+                into smaller, finite elements, which can be easily analyzed using numerical techniques. 
+                The FEA method is used to solve problems in a wide range of fields, including structural analysis, 
+                fluid mechanics, heat transfer, and electromagnetic field analysis.
+            </br> </br>
+                FEA works by dividing a complex system into small, interconnected elements or meshes. 
+                Each mesh is then analyzed using mathematical equations to calculate the behavior of the system. 
+                These equations are based on the physical properties of the materials used in the system and the loads applied to it. 
+                The equations are then solved using numerical techniques, such as the finite element method, to obtain a solution for the behavior of the system.
+            </br> </br>
+                FEA has numerous applications in different fields, including aerospace, automotive, civil, and mechanical engineering. 
+                In aerospace, FEA is used to design and analyze aircraft structures, landing gear, and engine components. 
+                In automotive engineering, FEA is used to analyze the behavior of car components, such as the suspension, frame, and bodywork. 
+                In civil engineering, FEA is used to analyze the behavior of buildings, bridges, and dams. In mechanical engineering, 
+                FEA is used to analyze the behavior of machines, such as engines, turbines, and pumps. 
+                The FEA method is also used in medical science to analyze the behavior of implants and prosthetics.
+            </br> </br>
+                I wrote a piece of code that solves traditional beam systems in structural engineering based on inputs from the user. These inputs include 
+                the loading, and the supports that the structure has within it. This allows highly indeterminate structures to be analyzed by hand. The code was written in
+                MATLAB, and has proven to be useful in school when analyzing complex systems. 
+
+                <a href="https://github.com/henryshughes/finite_element_code" target="_blank">Source Code</a>
+            </p>
+        </div>
+     </section>
+
+
     <section class="game-2 container">
-        <h2 class="smmd py-1">Tic Tac Toe:</h2>
-        <p class="">Since Tic Tac Toe is a solved game, I decided to create a problem that plays optimally.  </br> </br>
+        <h2 class="smmd py-1" id="tictactoe">Tic Tac Toe:</h2>
+        <p class="">Since Tic Tac Toe is a solved game, I decided to create a program that plays optimally.  </br> </br>
         The computer plays first, and cannot lose. The player can tie the computer if they play optimally.
+        Please view the source code at the following link: 
+                <a href="https://github.com/henryshughes/henryshughes.github.io/blob/master/tictactoe.js" target="_blank">Source Code</a>
         </p>
         <div class="container reset p-1">
             <button class="container md text-center" onclick= "computer_turn()" id="reset-2">Play!</button>
@@ -121,8 +184,8 @@
             </div>
 
             <div>
-                <a href="https://github.com/henryshughes"> <i class="fab fa-github fa-2x"></i> </a>
-                <a href="https://www.linkedin.com/in/henry-hughes-0bb184164/"> <i class="fab fa-linkedin fa-2x"></i> </a>
+                <a href="https://github.com/henryshughes" target="_blank"> <i class="fab fa-github fa-2x"></i> </a>
+                <a href="https://www.linkedin.com/in/henry-hughes-0bb184164/" target="_blank"> <i class="fab fa-linkedin fa-2x"></i> </a>
             </div>
         </div>
 
