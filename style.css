@@ -16,7 +16,6 @@ body {
     /* background: linear-gradient(to right, rgb(5, 26, 39), rgb(17, 35,52));
     background-color: rgb(2, 25, 38);*/
     background-color: rgb(0,0,0);
-
 }
 
 .container {
@@ -253,8 +252,7 @@ h6 {
 
 .content {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 .content img{
@@ -269,8 +267,6 @@ h6 {
     font-size: 17px;
     letter-spacing: normal;
 }
-
-
 
 .hobbies .content .hobbiesbox{
     background-color: #f4f4f4;
@@ -349,6 +345,7 @@ h6 {
     font-weight:  bolder;
     color: rgb(226,226,226);
 }
+
 
 .contact h2 {
     color: rgb(226,226,226);
@@ -468,6 +465,7 @@ h6 {
 
 .timesharewebapp p {
     font-size: 17px;
+    line-height: 1.75em;
 }
 
 .timesharewebapp a {
