@@ -71,10 +71,25 @@
                 View the code below to see a data project I did where an Extreme Leraning Machine (ELM) was used toe hydrology-forecast
                 hydrological data for a river basin in Spain!  </br> </br> 
 
-                Both ELM and Multiple Linear Regression were used to create this forecast. </br> </br> 
+                Both ELM and Multiple Linear Regression (MLR) were used to create this forecast, and the results ended up being quite similar! </br> </br> 
 
+                When I initially developed the codes to complete the forecasts, I thought MLR was going to be much less effective than ELM. 
+                This is because ELM is a feedforward neural network with a hidden layer, and it sounds like this type of machine learning architecture would be 
+                more effective than something that can easily be done in Microsoft Excel such as MLR. </br> </br> 
 
+                This being said, when you look at the mathematics behind ELM, it is closer to MLR than one would think. </br> </br> 
 
+                ELM is a feedforward neural network, there's no backpropogation in the method at all. The weights and biases are randomly set, as would be done in 
+                any neural network. </br> </br> 
+
+                However, there's a key difference here. Those weights and biases aren't trained using backpropogation. Some fun math is done which can be seen in the
+                source code, but due to the random weights and biases, the final vector that is used to generate the output is solved analytically in a manner similar to MLR. </br> </br> 
+
+                I'm going to take the same dataset and look to apply some other neural network architectures, particularly one that uses backpropogation to hopefully decrease
+                the overall cost of the objective function.
+            
+            
+                </br> </br> 
                 <a href="https://github.com/henryshughes/hydrology-forecast/blob/main/python%20code.ipynb" target="_blank">Source Code</a>
             </p>
         </div>
